@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 
-use App\Product;
+use App\Models\Product;
 use App\Models\Transaksi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
-class TakeController extends Controller
+class TransaksiController extends Controller
 {
 
     public function __construct()

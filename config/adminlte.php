@@ -269,7 +269,7 @@ return [
         ],
         [
             'text'        => 'Laporan',
-            'icon'        => 'fas fa-fw fa-book',
+            'icon'        => 'fas fa-fw fa-file',
             'can'         => 'isAdmin',
             'submenu'     =>[
                                 [

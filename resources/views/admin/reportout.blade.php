@@ -4,7 +4,7 @@
 
 @section('content_header')
 <center>
-<h1> Laporan Barang Keluar</h1>
+<h1>BARANG KELUAR</h1>
 </center>
     
 @stop
@@ -17,7 +17,7 @@
                     <!-- <div class="card-header">{{ __('  ') }}</div> -->
 
                     <div class="card-body">
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#tambahProductModal"><i class="fa fa-minus"></i> Unduh Laporan</button>
+                        
                         <hr/>
                         <table id="table-data" class="table table-borderer">
                         <thead>

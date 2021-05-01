@@ -4,7 +4,7 @@
 
 @section('content_header')
 <center>
-<h1> Laporan Barang Masuk</h1>
+<h1>BARANG MASUK</h1>
 </center>
     
 @stop

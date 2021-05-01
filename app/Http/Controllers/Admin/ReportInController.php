@@ -33,4 +33,6 @@ class ReportInController extends Controller
         $pdf = PDF::loadview('admin.print_reportin', ['reports' => $reports]);
         return $pdf->download('Laporan_Barang_Masuk.pdf');
     }
+
+   
 }

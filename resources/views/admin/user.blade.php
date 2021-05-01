@@ -4,7 +4,7 @@
 
 @section('content_header')
 <center>
-    <h1>Pengelolaan User</h1>
+    <h1>USER</h1>
 </center>
 
 @stop
@@ -17,7 +17,7 @@
                     <!-- <div class="card-header">{{ __('Pengelolaan USER') }}</div> -->
 
                     <div class="card-body table-responsive" >
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#tambahUserModal"><i class="fa fa-plus"></i>Tambah Data</button>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#tambahUserModal"><i class="fa fa-plus"></i>Tambah User</button>
                         <hr/>
                         <table id="table-data" class="table table-borderer">
                             <thead>

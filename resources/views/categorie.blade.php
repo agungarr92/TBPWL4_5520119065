@@ -4,7 +4,7 @@
 
 @section('content_header')
 <center>
-    <h1>Pengelolaan Kategori</h1>
+    <h1>KATEGORI</h1>
 </center>
     
 @stop
@@ -14,10 +14,10 @@
         <div class="row justifly-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">{{ __('Pengelolaan Kategori') }}</div>
+                    <!-- <div class="card-header">{{ __('Pengelolaan Kategori') }}</div> -->
 
                     <div class="card-body">
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#tambahCategorieModal"><i class="fa fa-plus"></i>Tambah Data</button>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#tambahCategorieModal"><i class="fa fa-plus"></i>Tambah Kategori</button>
                         <hr/>
                         <table id="table-data" class="table table-borderer">
                             <thead>

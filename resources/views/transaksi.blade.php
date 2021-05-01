@@ -3,7 +3,7 @@
 @section('title', 'SAMSAN TECH')
 
 @section('content_header')
-    <h1> Transaksi</h1>
+    <h1>TRANSAKSI</h1>
 @stop
 
 @section('content')

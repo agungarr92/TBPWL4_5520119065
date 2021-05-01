@@ -4,7 +4,7 @@
 
 @section('content_header')
 <center>
-    <h1>Pengelolaan Merek</h1>
+    <h1>MEREK</h1>
 </center>
     
 @stop
@@ -17,7 +17,7 @@
                     <!-- <div class="card-header">{{ __('Pengelolaan Merek') }}</div> -->
 
                     <div class="card-body">
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#tambahBrandModal"><i class="fa fa-plus"></i>Tambah Data</button>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#tambahBrandModal"><i class="fa fa-plus"></i>Tambah Merek</button>
                         <hr/>
                         <table id="table-data" class="table table-borderer">
                             <thead>
