@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => '<b>SAMSAN</b>TECH',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -252,103 +252,38 @@ return [
         [
             'text' => 'Kategori Barang',
             'url'  => 'categorie',
-            'icon' => 'fas fa-fw fa-book',
+            'icon' => 'fas fa-fw fa-box',
         ],
 
         [
             'text' => 'Merek Barang',
             'url'  => 'brand',
-            'icon' => 'fas fa-fw fa-archive',
+            'icon' => 'fas fa-fw fa-pen',
         ],
 
         [
+            'text'        => 'Transaksi',
+            'url'         => 'transaksi',
+            'icon'        => 'fas fa-fw fa-exchange-alt',
+            'can'         => ['isUser','isAdmin'],
+        ],
+        [
             'text'        => 'Laporan',
-            'icon'        => 'fas fa-fw fa-file',
+            'icon'        => 'fas fa-fw fa-book',
             'can'         => 'isAdmin',
             'submenu'     =>[
                                 [
                                     'text'        => ' Laporan Barang Masuk',
-                                    'url'         => 'admin/laporan/masuk',
+                                    'url'         => 'Admin/reportin',
+                                    'icon'        => 'fas fa-fw fa-download',
                                 ],
                                 [
                                     'text'        => 'Laporan Barang Keluar',
-                                    'url'         => 'admin/laporan/keluar',
+                                    'url'         => 'Admin/reportout',
+                                    'icon'        => 'fas fa-fw fa-upload',
                                 ],
                             ]
         ],
-
-        // [
-        //     'text'        => 'pages',
-        //     'url'         => 'admin/pages',
-        //     'icon'        => 'far fa-fw fa-file',
-        //     'label'       => 4,
-        //     'label_color' => 'success',
-        // ],
-        // ['header' => 'account_settings'],
-        // [
-        //     'text' => 'profile',
-        //     'url'  => 'admin/settings',
-        //     'icon' => 'fas fa-fw fa-user',
-        // ],
-        // [
-        //     'text' => 'change_password',
-        //     'url'  => 'admin/settings',
-        //     'icon' => 'fas fa-fw fa-lock',
-        // ],
-        // [
-        //     'text'    => 'multilevel',
-        //     'icon'    => 'fas fa-fw fa-share',
-        //     'submenu' => [
-        //         [
-        //             'text' => 'level_one',
-        //             'url'  => '#',
-        //         ],
-        //         [
-        //             'text'    => 'level_one',
-        //             'url'     => '#',
-        //             'submenu' => [
-        //                 [
-        //                     'text' => 'level_two',
-        //                     'url'  => '#',
-        //                 ],
-        //                 [
-        //                     'text'    => 'level_two',
-        //                     'url'     => '#',
-        //                     'submenu' => [
-        //                         [
-        //                             'text' => 'level_three',
-        //                             'url'  => '#',
-        //                         ],
-        //                         [
-        //                             'text' => 'level_three',
-        //                             'url'  => '#',
-        //                         ],
-        //                     ],
-        //                 ],
-        //             ],
-        //         ],
-        //         [
-        //             'text' => 'level_one',
-        //             'url'  => '#',
-        //         ],
-        //     ],
-        // ],
-        // ['header' => 'labels'],
-        // [
-        //     'text'       => 'important',
-        //     'icon_color' => 'red',
-        //     'url'        => '#',
-        // ],
-        // [
-        //     'text'       => 'warning',
-        //     'icon_color' => 'yellow',
-        //     'url'        => '#',
-        // ],
-        // [
-        //     'text'       => 'information',
-        //     'icon_color' => 'cyan',
-        //     'url'        => '#',
-        // ],
     ],
 
     /*

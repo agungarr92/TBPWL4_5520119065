@@ -64,3 +64,11 @@ Route::get('/ajax/dataUser/{id}', [App\Http\Controllers\AdminController::class, 
 
 Route::get('/admin/home', [App\Http\Controllers\AdminController::class, 'index'])->name('admin.home')->middleware('is_admin');
 
+Route::get('/transaksi', [App\Http\Controllers\TransaksiController::class, 'index'])->name('transaksi');
+Route::get('/transaksi', [App\Http\Controllers\TransaksiController::class, 'submit_transaksi'])->name('transaksi.submit');
+
+Route::get('/Admin/reportin', [App\Http\Controllers\Admin\ReportInController::class, 'index'])->name('admin.reports')->middleware('is_admin');
+Route::get('/Admin/print_reportin', [App\Http\Controllers\Admin\ReportInController::class, 'print_reportin'])->name('admin.print_reportin')->middleware('is_admin');
+Route::get('/Admin/reportout', [App\Http\Controllers\Admin\ReportOutController::class, 'index'])->name('admin.reportouts')->middleware('is_admin');
+
+

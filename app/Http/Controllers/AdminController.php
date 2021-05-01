@@ -125,4 +125,6 @@ class AdminController extends Controller
 
         return redirect()->route('admin.user')->with($notification);
     }
+
+    
 }
