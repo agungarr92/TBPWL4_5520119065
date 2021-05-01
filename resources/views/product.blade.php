@@ -1,9 +1,12 @@
 @extends('adminlte::page')
 
-@section('title', 'Dashboard')
+@section('title', 'SAMSAN TECH')
 
 @section('content_header')
-    <h1>Pengelolaan Product</h1>
+<center>
+    <h1>Pengelolaan Barang</h1>
+</center>
+    
 @stop
 
 @section('content')
@@ -11,7 +14,7 @@
         <div class="row justifly-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">{{ __('Pengelolaan Product') }}</div>
+                    <!-- <div class="card-header">{{ __('Pengelolaan Product') }}</div> -->
 
                     <div class="card-body">
                         <button class="btn btn-primary" data-toggle="modal" data-target="#tambahProductModal"><i class="fa fa-plus"></i>Tambah Data</button>
@@ -153,6 +156,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
+                        <br>
                             <div class="form-group" id="image-area"></div>
                             <div class="form-group">
                                 <label for="edit-photo">Photo</label>
@@ -222,7 +226,6 @@
                         $('#edit-old-photo').val(res.photo);
                         if (res.cover !== null){
                             $('#image-area').append(`<img src="${baseurl}/storage/photo_product/${res.photo}" width="200px"/>`);
-                            //$('image-area').append("<img src='"+baseurl+"/storage/photo_product/"+res.photo+"' width='200px'>");
                         } else {
                             $('#image-area').append('[Gambar tidak Tersedia]');
                         }

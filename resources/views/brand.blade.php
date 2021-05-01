@@ -1,9 +1,12 @@
 @extends('adminlte::page')
 
-@section('title', 'Dashboard')
+@section('title', 'SAMSAN TECH ')
 
 @section('content_header')
+<center>
     <h1>Pengelolaan Merek</h1>
+</center>
+    
 @stop
 
 @section('content')
@@ -11,7 +14,7 @@
         <div class="row justifly-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">{{ __('Pengelolaan Merek') }}</div>
+                    <!-- <div class="card-header">{{ __('Pengelolaan Merek') }}</div> -->
 
                     <div class="card-body">
                         <button class="btn btn-primary" data-toggle="modal" data-target="#tambahBrandModal"><i class="fa fa-plus"></i>Tambah Data</button>

@@ -1,9 +1,12 @@
 @extends('adminlte::page')
 
-@section('title', 'Dashboard')
+@section('title', 'SAMSAN TECH')
 
 @section('content_header')
+<center>
     <h1>Pengelolaan Kategori</h1>
+</center>
+    
 @stop
 
 @section('content')

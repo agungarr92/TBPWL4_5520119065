@@ -233,11 +233,12 @@ return [
             'text' => 'Dashboard',
             'url'  => 'admin/home',
             'icon' => 'fas fa-tachometer-alt',
+            
         ],
 
         [
             'text'        => 'User',
-            'url'         => 'admin/home',
+            'url'         => 'admin/user',
             'icon'        => 'fas fa-fw fa-user',
             'can'         => 'isAdmin',
         ],
