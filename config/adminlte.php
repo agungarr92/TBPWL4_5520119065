@@ -262,14 +262,14 @@ return [
         ],
 
         [
-            'text'        => 'Transaksi',
-            'url'         => 'transaksi',
+            'text'        => 'Pengambilan Barang',
+            'url'         => 'take',
             'icon'        => 'fas fa-fw fa-exchange-alt',
             'can'         => ['isUser','isAdmin'],
         ],
         [
             'text'        => 'Laporan',
-            'icon'        => 'fas fa-fw fa-file',
+            'icon'        => 'fas fa-fw fa-book',
             'can'         => 'isAdmin',
             'submenu'     =>[
                                 [

@@ -4,9 +4,8 @@
 
 @section('content_header')
 <center>
-<h1>BARANG KELUAR</h1>
+    <h1>LAPORAN BARANG KELUAR</h1>
 </center>
-    
 @stop
 
 @section('content')
@@ -17,15 +16,15 @@
                     <!-- <div class="card-header">{{ __('  ') }}</div> -->
 
                     <div class="card-body">
-                        
-                        <hr/>
+                    <a href="{{ route('admin.print_reportout') }}" target="_blank" class="btn btn-secondary float-right"><i class="fa fa-print"></i> Cetak PDF</a>
+                    <hr/>
                         <table id="table-data" class="table table-borderer">
                         <thead>
                                 <tr>
                                     <th>NO</th>
                                     <th>NAME</th>
                                     <th>QTY</th>
-                                    <th>TANGGAL MASUK</th>
+                                    <th>TANGGAL KELUAR</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -33,7 +32,7 @@
                                 @foreach($reportouts as $reportout)
                                     <tr>
                                         <td>{{ $no++ }}</td>
-                                        <td>{{ $reportout->name }}</td>
+                                        <td>{{ $reportout->id_product }}</td>
                                         <td>{{ $reportout->qty }}</td>
                                         <td>{{ $reportout->created_at}}</td>
                                         

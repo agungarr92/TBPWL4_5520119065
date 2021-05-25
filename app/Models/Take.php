@@ -4,10 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Transaksi extends Model
+class Take extends Model
 {
    
-    protected $table = 'transaksi';
+    protected $table = 'takes';
     protected $guarded = [];
     public function products()
     {

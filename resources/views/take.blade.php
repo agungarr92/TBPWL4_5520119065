@@ -3,7 +3,9 @@
 @section('title', 'SAMSAN TECH')
 
 @section('content_header')
-    <h1>TRANSAKSI</h1>
+<center>
+    <h1>PENGAMBILAN BARANG</h1>
+</center>
 @stop
 
 @section('content')
@@ -14,7 +16,7 @@
                     <!-- <div class="card-header">{{ __('  ') }}</div> -->
 
                     <div class="card-body">
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#tambahProductModal"><i class="fa fa-minus"></i> Product Keluar</button>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#tambahProductModal"><i class="fa fa-minus"></i> Barang Keluar</button>
                         <hr/>
                         <table id="table-data" class="table table-borderer">
                             <thead>
@@ -30,9 +32,9 @@
                                 @foreach($takes as $take)
                                     <tr>
                                         <td>{{ $no++ }}</td>
-                                        <td>{{ $take->products->name }}</td>
+                                        <td>{{ $take->id_product }}</td>
                                         <td>{{ $take->qty }}</td>
-                                        <td><div class="alert alert-success" role="alert">Success</div></td>
+                                        <td><div class="alert alert-success text-center" role="alert">Success</div></td>
                                     </tr>
                                 @endforeach
                             </tbody>
@@ -60,7 +62,7 @@
                             <label for="id_product">NAMA BARANG</label>
                             <select id="id_product" class="form-control" name="id_product">
                                 @foreach($products as $product)
-                                <option  class="form-control" name="id_product" value="{{ $product->id }}">{{ $product->name }}</option>
+                                <option  class="form-control" name="id_product" value="{{ $product->name }}">{{ $product->name }}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -71,8 +73,8 @@
                         
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                    <button type="submit" class="btn btn-primary">Kirim</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
             </div>

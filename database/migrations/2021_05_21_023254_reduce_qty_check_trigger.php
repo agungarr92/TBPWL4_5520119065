@@ -13,7 +13,7 @@ class ReduceQtyCheckTrigger extends Migration
      */
     public function up()
     {
-        \Illuminate\Support\Facades\DB::unprepared('CREATE TRIGGER reduceqtycheck AFTER INSERT ON transaksis
+        \Illuminate\Support\Facades\DB::unprepared('CREATE TRIGGER reduceqtycheck AFTER INSERT ON takes
         FOR EACH ROW
             IF NEW.id != 0
                 THEN

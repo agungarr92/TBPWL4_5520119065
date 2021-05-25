@@ -4,7 +4,7 @@
 
 @section('content_header')
 <center>
-    <h1>KATEGORI</h1>
+    <h1>KATEGORI BARANG</h1>
 </center>
     
 @stop

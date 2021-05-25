@@ -4,7 +4,7 @@
 
 @section('content_header')
 <center>
-    <h1>MEREK</h1>
+    <h1>MEREK BARANG</h1>
 </center>
     
 @stop
